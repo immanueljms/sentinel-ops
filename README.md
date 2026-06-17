@@ -1,24 +1,10 @@
 # SentinelOps
 
-An intelligent multi-drone monitoring, fleet management, and decision support platform built for coordinating drone operations across multiple locations.
+> Intelligent Multi-Drone Monitoring, Fleet Management, and Decision Support Platform.
 
-![Status](https://img.shields.io/badge/status-active-success)
-![React](https://img.shields.io/badge/React-19-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+SentinelOps is a React-based drone operations dashboard that simulates and monitors multiple drone fleets operating across geographically distributed locations.
 
----
-
-## Overview
-
-SentinelOps is an integrated drone management system that simulates and monitors multiple drone fleets operating across geographically distributed locations.
-
-The platform provides real-time operational awareness, fleet management, and automated decision support capabilities for drone operators.
-
-The system currently simulates operations across:
-
-- Bangalore Base
-- Mumbai Base
-- Pune Forward Site
+The system provides real-time fleet awareness, mission tracking, and automated decision support capabilities for drone operators.
 
 ---
 
@@ -26,37 +12,131 @@ The system currently simulates operations across:
 
 ### Fleet Monitoring
 
-- Real-time drone status tracking
-- Multi-location operational view
-- Mission lifecycle simulation
-- Drone telemetry visualization
+* Real-time drone status tracking
+* Multi-location fleet visualization
+* Mission lifecycle simulation
+* Interactive tactical dashboard
 
 ### Decision Support Engine
 
-- Low battery detection
-- Return-To-Base recommendations
-- Signal loss detection
-- Altitude violation alerts
-- Geofence conflict detection
+* Low battery detection
+* Return-To-Base recommendations
+* Signal loss detection
+* Altitude violation alerts
+* Geofence conflict detection
 
 ### Fleet Management
 
-- Platform filtering
-- Drone selection panel
-- Mission assignment simulation
-- Alert prioritization
-
-### Tactical Visualization
-
-- Interactive drone map
-- Live drone movement
-- Location-based segmentation
-- Alert feed dashboard
+* Platform filtering
+* Drone selection panel
+* Mission assignment simulation
+* Prioritized alert system
 
 ---
 
-## System Architecture
+## Tech Stack
 
+### Frontend
+
+* React (Create React App)
+* JavaScript
+* SVG Tactical Maps
+* CSS-in-JS
+
+### Planned Integrations
+
+* FastAPI
+* PostgreSQL
+* WebSockets
+* MAVLink
+* PX4
+* ROS2
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Install:
+
+* Node.js (v18+ recommended)
+* npm
+
+Verify installation:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/sentinel-ops.git
+```
+
+Navigate into the project:
+
+```bash
+cd sentinel-ops
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the application:
+
+```bash
+npm start
+```
+
+The app will run at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Available Scripts
+
+### Start development server
+
+```bash
+npm start
+```
+
+### Run tests
+
+```bash
+npm test
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Eject configuration (irreversible)
+
+```bash
+npm run eject
+```
+
+---
+
+## System Workflow
+
+```text
 Drone Fleet Simulator
 
 ↓
@@ -74,105 +154,38 @@ Alert Generation
 ↓
 
 Operator Dashboard
-
----
-
-## Technology Stack
-
-### Frontend
-
-- React
-- JavaScript
-- SVG Tactical Maps
-
-### Future Backend Integrations
-
-- FastAPI
-- WebSockets
-- PostgreSQL
-
-### Future Drone Integrations
-
-- MAVLink
-- PX4
-- ROS2
-
----
-
-## Current Rule Engine
-
-The system currently supports:
-
-### Battery Monitoring
-
-```text
-Battery < 25%
-↓
-Recommend Return To Base
-```
-
-### Critical Battery
-
-```text
-Battery < 12%
-↓
-Immediate Return To Base
-```
-
-### Signal Loss Detection
-
-```text
-Communication Failure
-↓
-Critical Alert
-```
-
-### Separation Conflict Detection
-
-```text
-Distance < 150m
-↓
-Collision Warning
 ```
 
 ---
 
 ## Project Structure
 
+```text
 src/
 
 ├── Dashboard
-
 ├── Fleet Simulator
-
 ├── Rule Engine
-
 ├── Tactical Map
-
 ├── Fleet Management
-
 └── Alert System
+```
 
 ---
 
 ## Future Improvements
 
-- Real drone integration
-- Weather-aware routing
-- Autonomous mission assignment
-- Predictive maintenance
-- Swarm intelligence
-- Edge computing integration
-
----
-
-## Demo
-
-This project currently runs entirely through a simulation engine and can later be connected to physical drone ecosystems.
+* Real drone integration
+* Weather-aware routing
+* Autonomous mission assignment
+* Predictive maintenance
+* Swarm intelligence
+* Edge computing integration
 
 ---
 
 ## License
 
 MIT
+
 
